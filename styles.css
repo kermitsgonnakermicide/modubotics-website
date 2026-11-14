@@ -12,21 +12,23 @@
 body { margin: 0; min-height: 100svh; display: flex; flex-direction: column; }
 a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 a:focus-visible { outline: 2px solid #222; outline-offset: 5px; }
-.site-header { padding: 22px 5vw; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 22px 5vw; }
+.header-email { font: 13px Arial, sans-serif; }
 .brand { display: block; width: 210px; margin-left: -12px; }
 .brand img { display: block; width: 100%; height: auto; }
 main { flex: 1; width: 100%; }
 .statement { width: min(100% - 48px, 720px); margin: 85px auto 110px; font-size: 20px; line-height: 1.7; }
 .statement p { margin: 0 0 28px; }
 .statement p:last-child { margin-bottom: 0; }
-.site-footer { margin: 0 5vw; padding: 23px 0; border-top: 1px solid #e5e5e5; color: #666; font: 11px Arial, sans-serif; }
+.site-footer { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px 24px; margin: 0 5vw; padding: 23px 0; border-top: 1px solid #e5e5e5; color: #666; font: 11px Arial, sans-serif; }
 .site-footer p { margin: 0; }
 ::selection { background: #ddd; color: #111; }
 
 @media (max-width: 600px) {
   .site-header { padding: 15px 24px; }
   .brand { width: 175px; margin-left: -10px; }
+  .header-email { font-size: 11px; }
   .statement { margin-top: 48px; margin-bottom: 72px; font-size: 18px; line-height: 1.7; }
   .statement p { margin-bottom: 25px; }
-  .site-footer { margin: 0 24px; line-height: 1.6; }
+  .site-footer { flex-direction: column; gap: 10px; margin: 0 24px; line-height: 1.6; }
 }
