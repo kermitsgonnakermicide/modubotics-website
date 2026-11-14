@@ -10,7 +10,6 @@ No build step or dependencies are required. Open `index.html` in a browser, or s
 
 - `index.html`: statement, email, page metadata, and footer.
 - `styles.css`: layout, typography, and colors.
-- `theme.js`: light/dark toggle, system preference detection, and saved theme choice.
 - `assets/logo.svg` and `assets/favicon.svg`: original supplied brand assets.
 - `assets/gradcapital.png`: original full-colour gradCapital logo sourced from its official website, https://www.gradcapital.in/ (Framer-hosted asset), displayed without a surrounding background.
 
