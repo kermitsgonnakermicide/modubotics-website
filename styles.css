@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+
+:root {
+  color-scheme: light;
+  --paper: #fafbf9;
+  --ink: #252c2b;
+  --teal: #0b6b6b;
+  --muted: #677470;
+  --line: #dce3de;
+  font-family: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; display: flex; flex-direction: column; }
+a { color: inherit; text-underline-offset: 5px; }
+a:focus-visible { outline: 2px solid var(--teal); outline-offset: 7px; border-radius: 2px; }
+.site-header { display: flex; justify-content: space-between; align-items: center; padding: 22px 5vw; }
+.brand { display: block; width: 210px; margin-left: -12px; }
+.brand img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+.header-contact { font-size: 13px; text-decoration: none; }
+.header-contact span { margin-left: 12px; color: var(--teal); }
+main { flex: 1; width: 100%; }
+.intro { width: min(100% - 48px, 720px); margin: 78px auto 110px; }
+.eyebrow { color: var(--muted); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; margin: 0 0 25px; }
+h1 { font-weight: 400; font-size: clamp(62px, 7.6vw, 100px); line-height: 1.04; letter-spacing: -.065em; margin: 0 0 51px; }
+h1 span { color: var(--teal); }
+.statement { max-width: 640px; font-family: Georgia, 'Times New Roman', serif; font-size: 20px; line-height: 1.65; }
+.statement p { margin: 0 0 23px; }
+.email { display: inline-flex; align-items: center; gap: 36px; margin-top: 17px; font-size: 17px; color: var(--teal); text-decoration-thickness: 1px; }
+.email span { display: inline-block; transition: transform .18s ease; }
+.email:hover span { transform: translate(3px, -3px); }
+.site-footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); margin: 0 5vw; padding: 23px 0; color: var(--muted); font-size: 11px; }
+.site-footer p { margin: 0; }
+::selection { background: #c9e4df; color: #073f3f; }
+
+@media (max-width: 600px) {
+  .site-header { padding: 15px 24px; }
+  .brand { width: 175px; margin-left: -10px; }
+  .header-contact { font-size: 11px; }
+  .header-contact span { margin-left: 4px; }
+  .intro { margin-top: 59px; margin-bottom: 78px; }
+  .eyebrow { font-size: 9px; letter-spacing: .12em; }
+  h1 { font-size: clamp(52px, 12.8vw, 76px); margin-bottom: 36px; }
+  .statement { font-size: 18px; line-height: 1.65; }
+  .email { font-size: 16px; gap: 25px; }
+  .site-footer { margin: 0 24px; flex-direction: column; gap: 10px; font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .email span { transition: none; }
+}
