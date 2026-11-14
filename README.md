@@ -6,6 +6,10 @@ A small, responsive one-page website for Modubotics, with the supplied wordmark,
 
 No build step or dependencies are required. Open `index.html` in a browser, or serve this directory with any static web server.
 
+## Hosting
+
+For hosts that run a build command, use `npm run build` and set the output directory to `dist`. The build uses Node.js 18 or later, requires no dependencies, and copies the HTML, stylesheet, and assets into `dist`.
+
 ## Edit
 
 - `index.html`: statement, email, page metadata, and footer.
