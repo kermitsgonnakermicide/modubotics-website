@@ -11,5 +11,6 @@ No build step or dependencies are required. Open `index.html` in a browser, or s
 - `index.html`: statement, email, page metadata, and footer.
 - `styles.css`: layout, typography, and colors.
 - `assets/logo.svg` and `assets/favicon.svg`: original supplied brand assets.
+- `assets/gradcapital.png`: gradCapital logo sourced from its official website, https://www.gradcapital.in/ (Framer-hosted asset), displayed in grayscale in the footer.
 
 The initial statement is draft copy about modular robotics and should be reviewed before a production launch. The only external resource is Google Fonts (Space Grotesk), with system fallbacks. No analytics or cookies are included.
